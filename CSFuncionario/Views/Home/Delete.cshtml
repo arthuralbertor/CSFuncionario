@@ -1,0 +1,55 @@
+﻿@model CSFuncionario.Models.func
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h3>Deletar Funcionário</h3>
+    <hr />
+    @Html.HiddenFor(model => model.codFuncionario)
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName(" Nome ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayName(" Data de Nascimento ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dataNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayName(" Salário ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salario)
+        </dd>
+
+        <dt>
+            @Html.DisplayName(" Atividades ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.atividades)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("Delete", "Home", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <input type="button" value="Cancelar" onclick="location.href=('/Home/Index')" class="btn btn-default" />
+        </div>
+    }
+</div>
