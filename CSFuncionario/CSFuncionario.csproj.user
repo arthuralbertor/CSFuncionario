@@ -15,6 +15,7 @@
     <WebStackScaffolding_LayoutPageFile>~/Views/Home/Index.cshtml</WebStackScaffolding_LayoutPageFile>
     <WebStackScaffolding_AreaDialogWidth>600</WebStackScaffolding_AreaDialogWidth>
     <WebStackScaffolding_DbContextTypeFullName>CSFuncionario.Models.CSFEntities</WebStackScaffolding_DbContextTypeFullName>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
